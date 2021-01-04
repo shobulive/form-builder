@@ -1,0 +1,54 @@
+[
+  {
+    "id": "reason_for_joining",
+    "type": "TEXT_INPUT",
+    "questionText": "Why do you want to join Eightfold.ai?",
+    "placeholder": "Type here",
+    "validations": [
+      { "type": "MANDATORY" },
+      { "type": "MAX_LENGTH", "value": 180 },
+      { "type": "TEXT_ONLY" }
+    ]
+  },
+  {
+    "id": "role_type",
+    "type": "RADIO_BUTTON",
+    "questionText": "Please select a role you are interested in",
+    "defaultValue": 1,
+    "options": [
+      { "id": 1, "value": "Full time" },
+      { "id": 2, "value": "Part time" },
+      { "id": 3, "value": "Internship" }
+    ],
+    "validations": [{ "type": "MANDATORY" }]
+  },
+  {
+    "id": "interest",
+    "type": "CHECK_BOX",
+    "questionText": "Select your interest",
+    "options": [
+      { "id": 1, "value": "Front-end" },
+      { "id": 2, "value": "Backend" },
+      { "id": 3, "value": "Full stack" }
+    ],
+    "defaultValue": 2,
+    "validations": [{ "type": "MANDATORY" }, { "type": "AT_LEAST", "value": 2 }]
+  },
+  {
+    "id": "references",
+    "type": "TEXT_INPUT",
+    "questionText": "References, if any?",
+    "placeholder": "Type here",
+    "validations": [
+      { "type": "MAX_LENGTH", "value": 180 },
+      { "type": "TEXT_ONLY" }
+    ]
+  },
+  {
+    "id": "compensation",
+    "type": "TEXT_INPUT",
+    "questionText": "Expected compensation?",
+    "placeholder": "Type here",
+    "validations": [{ "type": "NUMBER_ONLY" }]
+  }
+]

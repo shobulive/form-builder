@@ -1,0 +1,54 @@
+[
+  {
+    "id": "reason_for_joining",
+    "type": "TEXT_INPUT",
+    "questionText": "Why do you want to join Eightfold.ai?",
+    "placeholder": "Type here",
+    "validations": [
+      { "type": "MANDATORY" },
+      { "type": "MAX_LENGTH", "value": 180 }
+    ]
+  },
+  {
+    "id": "role_type",
+    "type": "RADIO_BUTTON",
+    "questionText": "Please select a role you are interested in?",
+    "options": [
+      {
+        "id": 4,
+        "value": "Full time"
+      },
+      {
+        "id": 5,
+        "value": "Part time"
+      },
+      {
+        "id": 7,
+        "value": "Internship"
+      }
+    ],
+    "defaultValue": 5,
+    "validations": [{ "type": "MANDATORY" }]
+  },
+  {
+    "id": "interest",
+    "type": "CHECK_BOX",
+    "questionText": "Are you protected veteran?",
+    "options": [
+      {
+        "id": 8,
+        "value": "Yes"
+      },
+      {
+        "id": 9,
+        "value": "No"
+      },
+      {
+        "id": 11,
+        "value": "Choose not to disclose"
+      }
+    ],
+    "defaultValue": 11,
+    "validations": [{ "type": "MANDATORY" }]
+  }
+]
