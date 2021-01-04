@@ -20,9 +20,7 @@ export const FormContextDataProvider = ({ children }) => {
       setData(newData);
     }
   }, [selectedJSON]);
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
+
   const submitAction = (renderJSON) => {
     let errorsNew = {};
     for (let jsonProp of renderJSON) {

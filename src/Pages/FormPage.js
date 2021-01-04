@@ -19,6 +19,7 @@ export const FormPage = () => {
     <MainContainer>
       <Select
         onChange={({ target: { value } } = {}) => setSelectedJSON(JSONS[value])}
+        id="json-selection"
       >
         <option disabled selected value>
           Please select a JSON
